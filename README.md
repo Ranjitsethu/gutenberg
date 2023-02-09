@@ -45,7 +45,7 @@ Now we run the above code and evaluate the performance of the model using ten fo
     
 vi) Deciding which algorithm is best
 
-After checking the performance of each model we concluded that TF-IDF with Support vector Machine (SVM) and stemming is the best practice is to be 
+After checking the performance of each model we concluded that TF-IDF with Logistic Regression and stemming is the best practice is to be 
 used to get more accuracy
     
 
