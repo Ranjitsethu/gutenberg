@@ -48,6 +48,6 @@ vi) Deciding which algorithm is best
 After checking the performance of each model we concluded that TF-IDF with Support vector Machine (SVM) and stemming is the best practice is to be 
 used to get more accuracy
     
-vii) 
+
 
 
