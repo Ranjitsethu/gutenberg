@@ -1,30 +1,12 @@
-# Text Classification (Group Assignment 1)
+# Clustering (Group Assignment 2)
 ## About the project
-The objective of this project is to classify five books of similar genre and semantics into their respective authors and genres. This is achieved by preprocessing the data, transforming it into BOW, TF-IDF, and n-gram, and then training a machine learning model using ten-fold cross-validation and error analysis to identify potential biases and author-specific characteristics.
+The objective of this project is to classify five different books of different authors that are sementically similar and create 200 documents of each book where each document has a total of 150 words. We created labels for each words and transformed these words into BOW, TF-IDF and LDA. We also used K-means, ARI and EM algorithms to compare the best model and the evaluation is done by using coherence, kappa and Silhouette and visualised the results obtained using the graphs
 ## Built with
 This project was created using the Python programming language and a variety of Python data frames, including numpy, pandas, and others.
-## Getting Started
-In this project we download 5 digital Gutenberg books by mentioning the numbers of the book which are of the same drama genre.
-We perform various operations on the text data of the books
-We processes the text to clean and prepare it for analysis, and then applies various NLP techniques to the text. 
-The techniques applied include:
-Removing line breaks and other unwanted characters,
-Converting the text to a list of words,
-Selecting 200 random partitions of 100 words each from the list of words,
-Stemming the words to get their root form,
-Lemmatizing the words to get their base form,
-Converting the words to lowercase,
-Encoding the labels for the text partitions,
-Creating a bag of words representation of the text partitions using a count vectorizer,
-Performing train-test split on the data,
-Fitting a Naive Bayes classifier to the training data,
-Predicting the label of the partitions in the test set. 
-Finally the resulting data i.e output  is saved to a CSV file.
-Performing train-test split on the data
 ##  About Coding part
-i) Labelling data
+i) Choosing data of our choice and labelling the data
 
-  First of all we import all the packages required for this function and then we get the samples of 5 gutenberg digital books which are of different authors and same genre and then we label the data of those digital books
+  First of all we import all the packages required for this function and then we get the samples of 5 gutenberg digital books which are of different authors and different genre and we give labels to each word obtained from the book.
   
 ii) Preprocessing and data cleaning
 
@@ -36,17 +18,15 @@ After preprocessing and cleaning the data it is represented in various forms suc
   
 iv) Usage of different Machine learning models
 
-The data is trained by using different machine learning models like Decision tree, Cross Validation, Random tree classifier etc and the accuracy is 
-measured in each case
+Here we use different clustering algorithms like K-means and ARI and EM algorithms to work on the data obtained after cleaning the samples of the book.
     
 v) Evaluations
 
-Now we run the above code and evaluate the performance of the model using ten fold cross validation
+Now we run the above code and evaluate the performance of the model by the obtained results for K- means, ARI and EM algorithms and decide which is the best clustering algorithm by visually plotting the data obtained from these results
     
 vi) Deciding which algorithm is best
 
-After checking the performance of each model we concluded that TF-IDF with Logistic Regression and stemming is the best practice is to be 
-used to get more accuracy
+After checking the performance of each model we concluded that for our data the K-means model has outperformed all the other models which made us conclude that K-means is the best model of all the models used.
     
 
 
